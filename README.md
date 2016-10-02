@@ -14,6 +14,29 @@ go build scsa.go
 
 The result should be ``scsa`` binary executable.
 
+Just in case you don't know how to setup ``$GOPATH`` and ``govend``, here's one time commands:
+
+```bash
+mkdir /path/to/gopath/that/you/want
+cd /path/to/gopath/that/you/want
+mkdir -p src/vendor
+export GOPATH=`pwd`
+export PATH=$PATH:$GOPATH/bin
+```
+
+Once you have those dirs set, do this:
+
+```bash
+go get -u -v github.com/govend/govend
+govend github.com/spf13/cobra
+```
+
+Now, go to ``scsa`` directory and then:
+
+```bash
+go build scsa.go
+```
+
 ## License
 
 ```
