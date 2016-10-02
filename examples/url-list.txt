@@ -1,0 +1,2 @@
+http://linter.structured-data.org/examples/google-rs/review.rdfa.html
+http://linter.structured-data.org/examples/google-rs/people.rdfa.html
